@@ -1,1 +1,3 @@
-find . \( -name "foo.txt" -or -name "bar.txt" -or -name "baz.txt" \) -and -type f -exec cat {} \;
+find . -name "foo.txt" -and -type f -exec cat {} \;
+find . -name "bar.txt" -and -type f -exec cat {} \;
+find . -name "baz.txt" -and -type f -exec cat {} \;
